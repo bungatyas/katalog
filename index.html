@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Skincare Catalog</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#produk">Produk</a>
+           
+        </nav>
+    </header>
+
+    <main id="home">
+        <h2 class="judul">Catalog Skincare</h2>
+        <p class="subjudul">Temukan skincare favoritmu.</p>
+
+        <section class="brand" id="produk">
+            <h2 class="skintific">Skintific</h2>
+            <div class="produk-list">
+                <div class="produk" onclick="tampilkanDetail(0)">
+                    <img src="img/moist scintific.jpeg" alt="Moisture Gel">
+                    <h3>5X Ceramide Moisture Gel</h3>
+                    <p>Rp 100.000</p>
+                    <button>Lihat Detail</button>
+                </div>
+
+                <div class="produk" onclick="tampilkanDetail(1)">
+                    <img src="img/serum scintific.jpeg" alt="Serum">
+                    <h3>5x ceramide barier serum</h3>
+                    <p>Rp 113.000</p>
+                    <button>Lihat Detail</button>
+                </div>
+
+                <div class="produk" onclick="tampilkanDetail(2)">
+                    <img src="img/sunscreen scintific.jpeg" alt="Sunscreen">
+                    <h3>5X Ceramide Sunscreen</h3>
+                    <p>Rp 80.000</p>
+                    <button>Lihat Detail</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand">
+            <h2 class="Glad2Glow">Glad2Glow</h2>
+            <div class="produk-list">
+                <div class="produk" onclick="tampilkanDetail(3)">
+                    <img src="img/serum g2g.jpeg" alt="Toner">
+                    <h3>G2G pomegranmate 10% Niacinamide serum</h3>
+                    <p>Rp 40.000</p>
+                    <button>Lihat Detail</button>
+                </div>
+
+                <div class="produk" onclick="tampilkanDetail(4)">
+                    <img src="img/micelar g2g.jpeg" alt="Serum">
+                    <h3>G2G cherry blossom betaine micellar water</h3>
+                    <p>Rp 45.000</p>
+                    <button>Lihat Detail</button>
+                </div>
+
+                <div class="produk" onclick="tampilkanDetail(5)">
+                    <img src="img/moist g2g.jpeg" alt="Night Cream">
+                    <h3>G2G pomegranmate 5% Niacinamide brightening moisturaizer</h3>
+                    <p>Rp 40.000</p>
+                    <button>Lihat Detail</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand">
+            <h2 class="Facetology">Facetology</h2>
+            <div class="produk-list">
+                <div class="produk" onclick="tampilkanDetail(6)">
+                    <img src="img/exfo facetolgy.jpeg" alt="Facial Cleanser">
+                    <h3>Facetology Triple Care 13,5% Total Acids Purple Ranger Peeling Treatment,</h3>
+                    <p>Rp 50.000</p>
+                    <button>Lihat Detail</button>
+                </div>
+
+                <div class="produk" onclick="tampilkanDetail(7)">
+                    <img src="img/susceen facetologi.jpeg" alt="Toner">
+                    <h3>Facetology Triple Care Sunscreen SPF 40 PA+++</h3>
+                    <p>Rp 91.000</p>
+                    <button>Lihat Detail</button>
+                </div>
+
+                <div class="produk" onclick="tampilkanDetail(8)">
+                    <img src="img/micelar facetology.jpeg" alt="Sunscreen">
+                    <h3>Facetology Triple Care Acne Calm Micellar Water</h3>
+                    <p>Rp 35.000</p>
+                    <button>Lihat Detail</button>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <button class="tutup" onclick="tutupDetail()">X</button>
+            <img id="detailGambar" src="" alt="">
+            <h2 id="detailNama"></h2>
+            <p id="detailBrand"></p>
+            <p id="detailHarga"></p>
+            <p id="detailDeskripsi"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>by bunga geby evelin</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
